@@ -55,8 +55,7 @@ private:
 	static constexpr std::size_t PAGE_SIZE        = 0x1000;
 
 	//
-	// Block meta stored at the head of every allocation, the user poitner is immediatly after the header. 
-	// Aligned to 16 bytes for shadow stack. 
+	// Block meta stored at the head of every allocation, the user poitner is immediatly after the header.
 	//
 
 	struct alignas(BLOCK_ALIGNMENT) ARENA_BLOCK
